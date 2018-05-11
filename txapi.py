@@ -1,6 +1,5 @@
 import requests
 import md5sign
-import re
 
 def get_content(plus_item):
     # url = "https://api.ai.qq.com/fcgi-bin/nlp/nlp_textpolar"  # 情感分析的API地址
