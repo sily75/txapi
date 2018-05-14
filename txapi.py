@@ -7,7 +7,8 @@ def get_content(plus_item):
     plus_item = plus_item.encode('utf-8')
     payload = md5sign.get_params(plus_item)#获取请求参数
     r = requests.get(url,params=payload)
-    return r.json()["data"]["answer"]
+    r = r.json()
+    return r["data"]["answer"]
 
 if __name__ == '__main__':
     while True:
